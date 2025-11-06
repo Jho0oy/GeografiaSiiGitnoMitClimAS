@@ -20,10 +20,12 @@
 body {
   margin: 0;
   font-family: "Poppins", sans-serif;
-  background-image: url("../assets/background.jpeg");
+  background-image: url("../assets/imgfundo.jpg"); /* Atualize com o nome correto */
   background-color: #000;
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -32,6 +34,7 @@ body {
   color: var(--text-color);
   padding: 24px;
 }
+
 
 main {
   width: 100%;
@@ -57,13 +60,14 @@ main {
 }
 
 .card {
-  background: var(--bg-light);
+  background: rgba(255, 255, 255, 0.9); /* Fundo branco com transparência */
   border-radius: 16px;
   padding: 24px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   text-align: center;
   animation: fadeIn 0.4s ease-out both;
 }
+
 
 @keyframes fadeIn {
   from {
